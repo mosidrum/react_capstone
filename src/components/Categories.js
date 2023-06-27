@@ -1,18 +1,32 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-// import { v4 as uuidv4 } from 'uuid';
-import { allCountries } from '../redux/countrySlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
+import { allCountries, getCategoryOfCountries } from '../redux/countrySlice';
 
 const Categories = () => {
   const allCategories = useSelector(allCountries);
+  const dispatch = useDispatch();
   const cat = allCategories.map((each) => (each.region));
   const categories = [...new Set(cat)];
+
+  const handleSubmit = (id) => {
+    dispatch(getCategoryOfCountries(id));
+  };
+
   return (
     <div className="category">
       {categories.map((category) => (
-        <ul key={category}>
-          <li>{category}</li>
-        </ul>
+        <NavLink
+          to="/countries"
+          key={category}
+        >
+          <button
+            type="submit"
+            onClick={() => handleSubmit(category)}
+          >
+            {category}
+          </button>
+        </NavLink>
       ))}
     </div>
   );

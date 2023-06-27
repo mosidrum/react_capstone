@@ -13,6 +13,8 @@ export const getCountries = createAsyncThunk('categories/getCountries', async ()
   try {
     const response = await axios.get(url);
     const { data } = response;
+    // const see = data.filter((each) => each.region === 'Africa');
+    // console.log(see);
     return data;
   } catch (error) {
     return error;
@@ -22,7 +24,18 @@ export const getCountries = createAsyncThunk('categories/getCountries', async ()
 const countrySlice = createSlice({
   name: 'countries',
   initialState,
-  reducers: {},
+  reducers: {
+    getCategoryOfCountries: (state, action) => {
+      const find = action.payload;
+      const filteredCountries = state.countries.filter((each) => (
+        each.region === find
+      ));
+      return {
+        ...state,
+        filteredCountries,
+      };
+    },
+  },
   extraReducers(builder) {
     builder
       .addCase(getCountries.pending, (state) => {
@@ -38,6 +51,9 @@ const countrySlice = createSlice({
   },
 });
 
+export const { getCategoryOfCountries } = countrySlice.actions;
+
 export const allCountries = (state) => state.countries.countries;
+export const filteredCountries = (state) => state.countries.filteredCountries;
 
 export default countrySlice.reducer;
