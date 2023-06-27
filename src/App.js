@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { getCountries } from './redux/countrySlice';
+import { getCategory } from './redux/categorySlice';
 import Home from './components/Pages/Home';
 import Facts from './components/Pages/Facts';
 import Navbar from './components/Navbar';
@@ -11,7 +11,7 @@ import Countries from './components/Countries';
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getCountries());
+    dispatch(getCategory());
   });
 
   return (

@@ -9,7 +9,7 @@ const initialState = {
   error: false,
 };
 
-export const getCountries = createAsyncThunk('categories/getCountries', async () => {
+export const getCategory = createAsyncThunk('categories/getCategory', async () => {
   try {
     const response = await axios.get(url);
     const { data } = response;
@@ -21,7 +21,7 @@ export const getCountries = createAsyncThunk('categories/getCountries', async ()
   }
 });
 
-const countrySlice = createSlice({
+const categorySlice = createSlice({
   name: 'countries',
   initialState,
   reducers: {
@@ -38,22 +38,22 @@ const countrySlice = createSlice({
   },
   extraReducers(builder) {
     builder
-      .addCase(getCountries.pending, (state) => {
+      .addCase(getCategory.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(getCountries.fulfilled, (state, action) => {
+      .addCase(getCategory.fulfilled, (state, action) => {
         state.isLoading = false;
         state.countries = action.payload;
       })
-      .addCase(getCountries, (state) => {
+      .addCase(getCategory, (state) => {
         state.error = true;
       });
   },
 });
 
-export const { getCategoryOfCountries } = countrySlice.actions;
+export const { getCategoryOfCountries } = categorySlice.actions;
 
 export const allCountries = (state) => state.countries.countries;
 export const filteredCountries = (state) => state.countries.filteredCountries;
 
-export default countrySlice.reducer;
+export default categorySlice.reducer;
