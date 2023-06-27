@@ -10,7 +10,6 @@ const Categories = () => {
   const categories = [...new Set(cat)];
 
   const handleSubmit = (id) => {
-    console.log(id);
     dispatch(getCategoryOfCountries(id));
   };
 
