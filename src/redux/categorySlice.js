@@ -13,8 +13,6 @@ export const getCategory = createAsyncThunk('categories/getCategory', async () =
   try {
     const response = await axios.get(url);
     const { data } = response;
-    // const see = data.filter((each) => each.region === 'Africa');
-    // console.log(see);
     return data;
   } catch (error) {
     return error;
@@ -30,6 +28,8 @@ const categorySlice = createSlice({
       const filteredCountries = state.countries.filter((each) => (
         each.region === find
       ));
+      console.log(filteredCountries);
+      localStorage.setItem('filteredCountries', JSON.stringify(filteredCountries));
       return {
         ...state,
         filteredCountries,
@@ -54,6 +54,5 @@ const categorySlice = createSlice({
 export const { getCategoryOfCountries } = categorySlice.actions;
 
 export const allCountries = (state) => state.countries.countries;
-export const filteredCountries = (state) => state.countries.filteredCountries;
 
 export default categorySlice.reducer;
