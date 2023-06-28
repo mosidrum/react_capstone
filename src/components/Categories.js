@@ -13,6 +13,12 @@ const Categories = () => {
     dispatch(getCategoryOfCountries(id));
   };
 
+  const categoryCounts = categories.reduce((counts, category) => {
+    const count = allCategories.filter((item) => item.region === category).length;
+    counts[category] = count;
+    return counts;
+  }, {});
+
   return (
     <div className="category">
       {categories.map((category) => (
@@ -25,6 +31,10 @@ const Categories = () => {
             onClick={() => handleSubmit(category)}
           >
             {category}
+            (
+            {categoryCounts[category]}
+            country
+            )
           </button>
         </NavLink>
       ))}

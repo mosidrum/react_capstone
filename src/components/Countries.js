@@ -1,29 +1,26 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import { filteredCountries } from '../redux/categorySlice';
-import { openModal } from '../redux/modalSlice';
 
 const Countries = () => {
   const result = useSelector(filteredCountries);
-  const dispatch = useDispatch();
   const saved = JSON.parse(localStorage.getItem('filteredCountries'));
-
-  const handleSubmit = (id) => {
-    dispatch(openModal(id));
-  };
 
   if (!result) {
     return (
       <div>
+        <NavLink to="/">
+          <button
+            type="submit"
+          >
+            Back
+          </button>
+        </NavLink>
         {saved.map((each) => (
           <ul key={each.alpha3Code}>
             <li>{each.name}</li>
-            <button
-              type="submit"
-              onClick={() => handleSubmit(each.alpha3Code)}
-            >
-              View more
-            </button>
+            <li>{each.population}</li>
           </ul>
         ))}
       </div>
@@ -31,15 +28,17 @@ const Countries = () => {
   }
   return (
     <div>
+      <NavLink to="/">
+        <button
+          type="submit"
+        >
+          Back
+        </button>
+      </NavLink>
       {result.map((each) => (
         <ul key={each.alpha3Code}>
           <li>{each.name}</li>
-          <button
-            type="submit"
-            onClick={() => handleSubmit(each.alpha3Code)}
-          >
-            View more
-          </button>
+          <li>{each.population}</li>
         </ul>
       ))}
     </div>
