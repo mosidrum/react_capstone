@@ -11,15 +11,24 @@ const Navbar = () => (
     </div>
 
     <div className="right">
-      <div className="links">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/facts">Facts</NavLink>
-      </div>
-      <div className="sub-right">
-        <NavLink to="/login">Login</NavLink>
-        <NavLink to="/register">Register</NavLink>
-      </div>
-
+      <NavLink
+        className="home"
+        to="/"
+      >
+        Home
+      </NavLink>
+      <NavLink
+        className="search-nav"
+        to="/search"
+      >
+        Search
+      </NavLink>
+      <NavLink
+        className="back"
+        to="/"
+      >
+        Back
+      </NavLink>
     </div>
   </header>
 );

@@ -9,7 +9,6 @@ import Search from './components/Search';
 import Countries from './components/Countries';
 import './css/App.css';
 import Back from './components/Back';
-import Footer from './components/Footer';
 
 function App() {
   const dispatch = useDispatch();
@@ -31,7 +30,6 @@ function App() {
         <Route path="/countries" element={<Countries />} />
         <Route path="/search" element={<Search />} />
       </Routes>
-      <Footer />
     </div>
   );
 }
