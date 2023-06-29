@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  height: 70px;
+  background-color: green;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  height: 40px;
+  width: 40px;
+}
+
+.right {
+  display: none;
+}

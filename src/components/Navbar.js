@@ -5,15 +5,15 @@ import '../css/navbar.css';
 
 const Navbar = () => (
   <header>
-    <div>
+    <div className="left">
       <img src={logo} alt="planet" />
       <NavLink to="/"><h1>Global village</h1></NavLink>
     </div>
 
-    <div>
+    <div className="right">
       <NavLink to="/">Home</NavLink>
       <NavLink to="/facts">Facts</NavLink>
-      <div>
+      <div className="sub-right">
         <NavLink to="/login">Login</NavLink>
         <NavLink to="/register">Register</NavLink>
       </div>

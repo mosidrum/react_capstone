@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { filteredCountries } from '../redux/categorySlice';
+import Back from './Back';
 
 const Countries = () => {
   const result = useSelector(filteredCountries);
@@ -28,13 +29,7 @@ const Countries = () => {
   }
   return (
     <div>
-      <NavLink to="/">
-        <button
-          type="submit"
-        >
-          Back
-        </button>
-      </NavLink>
+      <Back />
       {result.map((each) => (
         <ul key={each.alpha3Code}>
           <li>{each.name}</li>
