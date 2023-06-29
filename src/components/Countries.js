@@ -64,17 +64,86 @@ const Countries = () => {
         </div>
         <div className="details">
           {selectedCountry && (
-            <h1>
+            <>
               {Object.values(selectedCountry).map((value) => (
                 <div
                   key={value.alpha3Code}
+                  className="view-more"
                 >
-                  <h2>{value.name}</h2>
-                  <li>{value.population}</li>
-                  <li>{value.subregion}</li>
+                  <img src={value.flag} alt={value.flag} />
+                  <table className="table">
+                    <td className="info">
+                      <span>Name:</span>
+                      {value.name}
+                    </td>
+                    <td className="info">
+                      <span>Area:</span>
+                      {value.area}
+                    </td>
+                    <td className="info">
+                      <span>Capital city:</span>
+                      {value.capital}
+                    </td>
+                    <td className="info">
+                      <span>Demonym:</span>
+                      {value.demonym}
+                    </td>
+                    <td className="info">
+                      <span>Region:</span>
+                      {value.region}
+                    </td>
+                    <td className="info">
+                      <span>Subregion:</span>
+                      {value.subregion}
+                    </td>
+                    <td className="info">
+                      {value.currencies && value.currencies.length > 0 && (
+                        <>
+                          <span>Currency:</span>
+                          {value.currencies[0].name}
+                        </>
+                      )}
+                    </td>
+                    <td className="info">
+                      {value.currencies && value.currencies.length > 0 && (
+                        <>
+                          <span>Currency symbol:</span>
+                          {value.currencies[0].symbol}
+                        </>
+                      )}
+                    </td>
+                    <td className="info">
+                      <span>Population:</span>
+                      {value.population}
+                    </td>
+                    <td className="info">
+                      <span>Native name:</span>
+                      {value.nativeName}
+                    </td>
+                    <td className="info">
+                      <span>Time zone:</span>
+                      {value.timezones}
+                    </td>
+                    <td className="info">
+                      {value.languages && value.languages.length > 0 && (
+                        <>
+                          <span>Language:</span>
+                          {value.languages[0].name}
+                        </>
+                      )}
+                    </td>
+                    <td className="info">
+                      {value.regionalBlocs && value.regionalBlocs.length > 0 && (
+                        <>
+                          <tr>Regional blocs:</tr>
+                          {value.regionalBlocs[0].name}
+                        </>
+                      )}
+                    </td>
+                  </table>
                 </div>
               ))}
-            </h1>
+            </>
           )}
         </div>
       </div>
@@ -126,17 +195,86 @@ const Countries = () => {
       </div>
       <div className="details">
         {selectedCountry && (
-          <h1>
-            {Object.values(selectedCountry).map((value) => (
-              <div
-                key={value.alpha3Code}
-              >
-                <h2>{value.name}</h2>
-                <li>{value.population}</li>
-                <li>{value.subregion}</li>
-              </div>
-            ))}
-          </h1>
+        <>
+          {Object.values(selectedCountry).map((value) => (
+            <div
+              key={value.alpha3Code}
+              className="view-more"
+            >
+              <img src={value.flag} alt={value.flag} />
+              <table className="table">
+                <td className="info">
+                  <span>Name:</span>
+                  {value.name}
+                </td>
+                <td className="info">
+                  <span>Area:</span>
+                  {value.area}
+                </td>
+                <td className="info">
+                  <span>Capital city:</span>
+                  {value.capital}
+                </td>
+                <td className="info">
+                  <span>Demonym:</span>
+                  {value.demonym}
+                </td>
+                <td className="info">
+                  <span>Region:</span>
+                  {value.region}
+                </td>
+                <td className="info">
+                  <span>Subregion:</span>
+                  {value.subregion}
+                </td>
+                <td className="info">
+                  {value.currencies && value.currencies.length > 0 && (
+                  <>
+                    <span>Currency:</span>
+                    {value.currencies[0].name}
+                  </>
+                  )}
+                </td>
+                <td className="info">
+                  {value.currencies && value.currencies.length > 0 && (
+                  <>
+                    <span>Currency symbol:</span>
+                    {value.currencies[0].symbol}
+                  </>
+                  )}
+                </td>
+                <td className="info">
+                  <span>Population:</span>
+                  {value.population}
+                </td>
+                <td className="info">
+                  <span>Native name:</span>
+                  {value.nativeName}
+                </td>
+                <td className="info">
+                  <span>Time zone:</span>
+                  {value.timezones}
+                </td>
+                <td className="info">
+                  {value.languages && value.languages.length > 0 && (
+                  <>
+                    <span>Language:</span>
+                    {value.languages[0].name}
+                  </>
+                  )}
+                </td>
+                <td className="info">
+                  {value.regionalBlocs && value.regionalBlocs.length > 0 && (
+                  <>
+                    <tr>Regional blocs:</tr>
+                    {value.regionalBlocs[0].name}
+                  </>
+                  )}
+                </td>
+              </table>
+            </div>
+          ))}
+        </>
         )}
       </div>
     </div>

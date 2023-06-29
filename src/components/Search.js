@@ -30,11 +30,51 @@ const Search = () => {
         </div>
         <div>
           {searchTerm && (
-            <ul>
+            <div className="result">
               {searchCountry.map((each) => (
-                <li key={each.alpha3Code}>{each.name}</li>
+                <ul
+                  key={each.alpha3Code}
+                  className="each-result"
+                >
+                  <img src={each.flag} alt={each.name} />
+                  <h3>{each.name}</h3>
+                  <div className="bottom">
+                    <li>
+                      Demonym:
+                      <span
+                        className="value"
+                      >
+                        {each.demonym}
+                      </span>
+                    </li>
+                    <li>
+                      Population:
+                      <span
+                        className="value"
+                      >
+                        {each.population}
+                      </span>
+                    </li>
+                    <li>
+                      Region:
+                      <span
+                        className="value"
+                      >
+                        {each.region}
+                      </span>
+                    </li>
+                    <li>
+                      Subregion:
+                      <span
+                        className="value"
+                      >
+                        {each.subregion}
+                      </span>
+                    </li>
+                  </div>
+                </ul>
               ))}
-            </ul>
+            </div>
           )}
         </div>
       </div>
