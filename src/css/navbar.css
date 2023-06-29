@@ -1,15 +1,27 @@
 header {
   display: flex;
   height: 70px;
-  background-color: green;
+  background-color: rgb(84,184,167, 0.5);
   justify-content: space-between;
   align-items: center;
   padding: 5px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  backdrop-filter: blur(7px);
 }
 
 .left {
   display: flex;
+  gap: 5px;
   flex-direction: row;
+}
+
+.left a {
+  color: #000000;
+  text-decoration: none;
 }
 
 img {
@@ -18,5 +30,36 @@ img {
 }
 
 .right {
-  display: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.right .links {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right .links a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+}
+
+.sub-right {
+  display: flex;
+  gap: 20px;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.sub-right a {
+  text-decoration: none;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: #000000;
 }

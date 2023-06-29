@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { allCountries, getCategoryOfCountries } from '../redux/categorySlice';
+import '../css/categories.css';
 
 const Categories = () => {
   const allCategories = useSelector(allCountries);
@@ -18,7 +19,7 @@ const Categories = () => {
     'https://i.ibb.co/3fLsYTF/Europe.png',
     'https://i.ibb.co/9tHqvcc/Africa.png',
     'https://i.ibb.co/ZN1sYPg/Oceania.png',
-    'https://i.ibb.co/nLtVMYL/Americas.jpg',
+    'https://i.ibb.co/yNb2x44/Americas.png',
     'https://i.ibb.co/7rNfzyr/Polar.png',
     'https://i.ibb.co/mJ7TR65/Antarctic.png',
     'https://i.ibb.co/mJ7TR65/Antarctic.png',
@@ -36,25 +37,27 @@ const Categories = () => {
   }, {});
 
   return (
-    <div className="category">
+    <div className="categories">
       {categories.map((category) => (
-        <div key={category}>
+        <button
+          type="submit"
+          className="category"
+          key={category}
+          onClick={() => handleSubmit(category)}
+        >
           <img src={categoryImage[category]} alt={category} />
           <NavLink
             to="/countries"
           >
-            <button
-              type="submit"
-              onClick={() => handleSubmit(category)}
-            >
+            <p className="cat">
               {category}
               (
               {categoryCounts[category]}
               country
               )
-            </button>
+            </p>
           </NavLink>
-        </div>
+        </button>
       ))}
     </div>
   );
