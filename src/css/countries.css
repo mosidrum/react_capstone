@@ -81,6 +81,7 @@
   right: 0;
   margin-bottom: 10px;
   margin-top: 45px;
+  border-radius: 5px;
   width: 30%;
   overflow-y: auto;
   padding: 20px 10px;
@@ -109,4 +110,40 @@
 .info {
   display: flex;
   gap: 5px;
+}
+
+@media (min-width: 800px) and (max-width: 1280px) {
+  .countries {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 65%;
+    margin-top: 90px;
+  }
+
+  .country {
+    width: 90%;
+    height: 100%;
+  }
+
+  .country img {
+    width: 200px;
+    height: 100px;
+  }
+
+  .details {
+    width: 35%;
+    padding-bottom: 10px;
+    margin-top: 90px;
+  }
+
+  .view-more img {
+    width: 250px;
+    height: 150px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1280px) {
+  
 }

@@ -40,3 +40,24 @@
   color: #000;
   font-size: 18px;
 }
+
+@media (min-width: 800px) and (max-width: 1280px) {
+  .category {
+    width: 90%;
+    height: 90%;
+    padding: 20px;
+  }
+  .category img {
+    width: 80%;
+    height: 80%;
+    margin-bottom: 10px;
+  }
+
+  .category p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1280px) {
+  
+}
