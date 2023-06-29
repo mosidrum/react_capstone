@@ -7,7 +7,7 @@ import Facts from './components/Pages/Facts';
 import Navbar from './components/Navbar';
 import Search from './components/Search';
 import Countries from './components/Countries';
-import './css/App.module.scss';
+import './css/App.css';
 
 function App() {
   const dispatch = useDispatch();
