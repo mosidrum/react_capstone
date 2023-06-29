@@ -1,0 +1,86 @@
+.countries-container {
+  display: flex;
+}
+
+.countries {
+  margin-top: 45px;
+  margin-bottom: 10px;
+  background-color: rgb(84, 184, 167, 0.3);
+  width: 70%;
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-right: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 5px;
+  margin-left: 5px; 
+}
+
+.country {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(84, 184, 167, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.country img {
+  width: 250px;
+  height: 150px;
+}
+
+.country .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.country .bottom:hover {
+  cursor: pointer;
+}
+
+.country h3 {
+  text-align: center;
+}
+
+.bottom li .value {
+  margin-left: 5px;
+}
+
+.bottom li {
+  list-style: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.bottom button {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 15px;
+  font-size: 14px;
+}
+
+.bottom button:hover {
+  cursor: pointer;
+}
+
+.details {
+  background:rgb(84, 184, 167, 0.3);
+  position: sticky;
+  max-height: 602px;
+  top: 75px;
+  right: 0;
+  margin-bottom: 10px;
+  margin-top: 45px;
+  width: 30%;
+  overflow-y: auto;
+}
