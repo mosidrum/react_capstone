@@ -11,7 +11,7 @@ header {
   left: 0;
   z-index: 1;
   backdrop-filter: blur(7px);
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
 }
 
 .open {
@@ -21,8 +21,13 @@ header {
   position: fixed;
   z-index: 1;
   backdrop-filter: blur(7px);
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+}
 
+.left {
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
 }
 
 .open .left {
@@ -30,10 +35,21 @@ header {
   top: 15px;
 }
 
+.menu-bar {
+  display: none;
+}
+
 .open .menu-bar {
   position: absolute;
   top: 25px;
   right: 20px;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
 }
 
 .open .right {
@@ -44,19 +60,17 @@ header {
   margin: 0 auto;
 }
 
-.open .right a {
-  width: 200px;
-}
-
-.left {
-  display: flex;
-  gap: 5px;
-  flex-direction: row;
-}
-
 .left a {
   color: #000;
   text-decoration: none;
+}
+
+.right a {
+  text-decoration: none;
+}
+
+.open .right a {
+  width: 200px;
 }
 
 img {
@@ -64,36 +78,15 @@ img {
   width: 40px;
 }
 
-.menu-bar {
-  display: none;
-}
-
-.right {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  text-align: center;
-}
-
-.right {
-  display: flex;
-  gap: 40px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.right a {
-  text-decoration: none;
-}
-
-.home, .search-nav, .back {
-  border: none;
+.home,
+.search-nav,
+.back {
   border-radius: 5px;
   border: 1px solid rgb(94, 94, 94);
   font-size: 18px;
-  color: rgb( 0, 0, 0);
+  color: rgb(0, 0, 0);
   padding: 5px 15px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px, rgba(0, 0, 0, 0.24) 0 1px 2px;
 }
 
 @media (min-width: 400px) and (max-width: 800px) {

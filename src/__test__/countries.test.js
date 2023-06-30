@@ -18,16 +18,6 @@ const mockedCountries = [
   },
 ];
 
-const mockedSelectedCountry = [
-  {
-    alpha3Code: 'ABC',
-    name: 'Country 1',
-    flag: 'flag1.png',
-    demonym: 'Demonym 1',
-    population: 1000,
-  },
-];
-
 const mockedLocalStorageData = JSON.stringify(mockedCountries);
 
 beforeEach(() => {

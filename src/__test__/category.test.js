@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import Categories from '../components/Categories';
@@ -25,7 +25,7 @@ describe('Categories component', () => {
     const { container } = render(
       <MemoryRouter>
         <Categories />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     expect(container).toMatchSnapshot();

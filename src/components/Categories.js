@@ -11,7 +11,6 @@ const Categories = () => {
   const dispatch = useDispatch();
   const cat = allCategories.map((each) => (each.region));
   const categories = [...new Set(cat)];
-  console.log(categories);
 
   const handleSubmit = (id) => {
     dispatch(getCategoryOfCountries(id));

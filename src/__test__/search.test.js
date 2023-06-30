@@ -21,13 +21,9 @@ describe('Search component', () => {
         <Router>
           <Search />
         </Router>
-      </Provider>
+      </Provider>,
     );
-
-    // Assert that the search input is rendered
     const searchInput = screen.getByPlaceholderText('search country');
     expect(searchInput).toBeInTheDocument();
-
-    // Add more assertions if needed
   });
 });

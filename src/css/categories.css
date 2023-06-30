@@ -19,14 +19,14 @@
   border-radius: 10px;
   background-color: rgb(84, 184, 167, 0.3);
   padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
 }
 
 .category p {
   border: 1px solid rgb(72, 70, 70);
   padding: 5px 15px;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px, rgba(0, 0, 0, 0.24) 0 1px 2px;
 }
 
 .category img {
@@ -60,6 +60,7 @@
     height: 90%;
     padding: 30px;
   }
+
   .category img {
     width: 100%;
     height: 100%;
