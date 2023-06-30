@@ -61,5 +61,15 @@
 }
 
 @media (min-width: 400px) and (max-width: 800px) {
+  .categories {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
+  .category {
+    width: 80%;
+  }
+
+  .category img {
+    margin-bottom: 10px;
+  }
 }

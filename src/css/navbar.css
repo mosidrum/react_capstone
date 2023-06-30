@@ -63,5 +63,30 @@ img {
 }
 
 @media (min-width: 400px) and (max-width: 800px) {
+  header {
+    padding: 5px 15px;
+  }
 
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  .left h1 {
+    font-size: 14px;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .right {
+    display: none;
+  }
 }
