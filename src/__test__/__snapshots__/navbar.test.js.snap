@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders the Navbar component 1`] = `
+<header
+  className=""
+>
+  <div
+    className="left"
+  >
+    <img
+      alt="planet"
+      src="blue-earth-removebg-preview.png"
+    />
+    <a
+      aria-current="page"
+      className="active"
+      href="/"
+      onClick={[Function]}
+    >
+      <h1>
+        Global village
+      </h1>
+    </a>
+  </div>
+  <div
+    className="menu-bar"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <svg
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+      viewBox="0 0 1024 1024"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"
+      />
+    </svg>
+  </div>
+  <div
+    className="right"
+  >
+    <a
+      aria-current="page"
+      className="home active"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="search-nav"
+      href="/search"
+      onClick={[Function]}
+    >
+      Search
+    </a>
+    <a
+      aria-current="page"
+      className="back active"
+      href="/"
+      onClick={[Function]}
+    >
+      Back
+    </a>
+  </div>
+</header>
+`;

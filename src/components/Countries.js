@@ -13,7 +13,6 @@ const Countries = () => {
     const details = countries.filter((each) => (
       each.alpha3Code === id
     ));
-    console.log(details);
     setSelectedCountry(details);
   };
 
