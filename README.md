@@ -1,70 +1,235 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!--
+HOW TO USE:
+This is an example of how you may give instructions on setting up your project locally.
 
-## Available Scripts
+Modify this file to match your project and remove sections that don't apply.
 
-In the project directory, you can run:
+REQUIRED SECTIONS:
+- Table of Contents
+- About the Project
+  - Built With
+  - Live Demo
+- Getting Started
+- Authors
+- Future Features
+- Contributing
+- Show your support
+- Acknowledgements
+- License
 
-### `npm start`
+OPTIONAL SECTIONS:
+- FAQ
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+After you're finished please remove all the comments and instructions!
+-->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- TABLE OF CONTENTS -->
 
-### `npm test`
+# 📗 Table of Contents
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Usage](#usage)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
 
-### `npm run build`
+<!-- PROJECT DESCRIPTION -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 📖 [React capstone project ] <a name="about-project"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**React capstone project** React capstone project is about building a mobile web application to check a list of metrics (numeric values) that I created using React and Redux. I selectd an API that provides numeric data about a topic that I like and then build the webapp around it.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠 Built With <a name="built-with"></a>
 
-### `npm run eject`
+### Tech Stack <a name="tech-stack"></a>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<details>
+  <summary>React</summary>
+  <ul>
+    <li><a href="#">React</a></li>
+  </ul>
+</details>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<details>
+  <summary>CSS</summary>
+  <ul>
+    <li><a href="#">CSS</a></li>
+  </ul>
+</details>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<details>
+  <summary>Jest testing</summary>
+  <ul>
+    <li><a href="#">Jest testing</a></li>
+  </ul>
+</details>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<details>
+  <summary>npm</summary>
+  <ul>
+    <li><a href="#">npm</a></li>
+  </ul>
+</details>
 
-## Learn More
+<details>
+  <summary>Redux</summary>
+  <ul>
+    <li><a href="#">Redux</a></li>
+  </ul>
+</details>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- Features -->
 
-### Code Splitting
+### Key Features <a name="key-features"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **React**
+- **API**
+- **Redux**
+- **react-router-dom**
+- **react-icons**
+- **npm**
+- **css**
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<!-- GETTING STARTED -->
 
-### Making a Progressive Web App
+## 💻 Getting Started <a name="getting-started"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Install latest node js
+ 
 
-### Advanced Configuration
+### Prerequisites
+Clone this repository
+npm install
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+<!--
+Example command:
+
+```sh
+ 
+```
+ -->
+
+### Setup
+
+Clone this repository to your desired folder: https://github.com/mosidrum/react_capstone or visit the website
+
+<!--
+Example commands:
+
+```sh
+  cd my-folder
+  git clone git@github.com:myaccount/my-project.git
+```
+--->
+<!--
+Example command:
+
+```sh
+  cd my-project
+  gem install
+```
+--->
+
+### Usage
+
+Built about numeric data that I like.
+
+<!--
+Example command:
+
+```sh
+  rails server
+```
+--->
+
+<!--
+Example command:
+
+```sh
+  bin/rails test test/models/article_test.rb
+```
+--->
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Coming soon
 
-### `npm run build` fails to minify
+<!--
+Example:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+
+```
+ -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Ayodele Isaac**
+
+- GitHub: [@githubhandle](https://github.com/mosidrum)
+- Twitter: [@twitterhandle](https://twitter.com/mosidrum)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/isaac-ayodele-37890521b)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[ Improve and fetch more data ]**
+- [ ] **[Artificial Intelligence]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/mosidrum/react_capstone/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, support and encourage me and give this project a ⭐️
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank God almighty, John Oluwalusi and my coding partners at microverse that guided me through
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](https://github.com/mosidrum/react_capstone/blob/dev/LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
