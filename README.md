@@ -46,9 +46,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [React capstone project ] <a name="about-project"></a>
+# 📖 React capstone project <a name="about-project"></a>
 
 **React capstone project** React capstone project is about building a mobile web application to check a list of metrics (numeric values) that I created using React and Redux. I selectd an API that provides numeric data about a topic that I like and then build the webapp around it.
+
+![React capstone project ](./src/assets/readme.JPG)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -167,7 +169,7 @@ Example command:
 
 ### Deployment
 
-Coming soon
+https://regal-basbousa-c64ae2.netlify.app/
 
 <!--
 Example:
