@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Countries component should render countries correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="countries-container"
+  >
+    <div
+      class="countries"
+    >
+      <div
+        class="country"
+        role="button"
+        tabindex="0"
+      >
+        <img
+          alt="Afghanistan"
+          src="afghanistan.png"
+        />
+        <h3>
+          Afghanistan
+        </h3>
+        <div
+          class="bottom"
+        >
+          <li>
+            Demonym:
+            <span
+              class="value"
+            >
+              Afghan
+            </span>
+          </li>
+          <li>
+            Population:
+            <span
+              class="value"
+            >
+              10000000
+            </span>
+          </li>
+          <button
+            type="submit"
+          >
+            View more
+          </button>
+        </div>
+      </div>
+      <div
+        class="country"
+        role="button"
+        tabindex="0"
+      >
+        <img
+          alt="United States"
+          src="usa.png"
+        />
+        <h3>
+          United States
+        </h3>
+        <div
+          class="bottom"
+        >
+          <li>
+            Demonym:
+            <span
+              class="value"
+            >
+              American
+            </span>
+          </li>
+          <li>
+            Population:
+            <span
+              class="value"
+            >
+              300000000
+            </span>
+          </li>
+          <button
+            type="submit"
+          >
+            View more
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="details"
+    />
+  </div>
+</DocumentFragment>
+`;
