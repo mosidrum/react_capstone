@@ -31,7 +31,7 @@ input:focus {
   align-items: center;
   justify-items: center;
   margin-bottom: 40px;
-  padding: 5px;
+  padding: 5px 50px;
   border-radius: 5px;
   margin-top: 10px;
 }

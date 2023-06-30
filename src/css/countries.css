@@ -1,5 +1,6 @@
 .countries-container {
   display: flex;
+  padding: 0px 20px;
 }
 
 .countries {
@@ -92,6 +93,7 @@
 .view-more {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .view-more img {
