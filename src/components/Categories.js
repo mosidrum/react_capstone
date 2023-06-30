@@ -1,11 +1,13 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { allCountries, getCategoryOfCountries } from '../redux/categorySlice';
+import { allCountries, getCategoryOfCountries, isLoading } from '../redux/categorySlice';
 import '../css/categories.css';
+import loadingImage from '../assets/loading_3.gif';
 
 const Categories = () => {
   const allCategories = useSelector(allCountries);
+  const loading = useSelector(isLoading);
   const dispatch = useDispatch();
   const cat = allCategories.map((each) => (each.region));
   const categories = [...new Set(cat)];
@@ -38,26 +40,36 @@ const Categories = () => {
 
   return (
     <div className="categories">
-      {categories.map((category) => (
-        <button
+      {loading && (
+        <img
+          src={loadingImage}
+          alt="loading gif"
+          className="loading"
+        />
+      )}
+      {!loading && categories.map((category) => (
+        <div
           type="submit"
           className="category"
           key={category}
-          onClick={() => handleSubmit(category)}
         >
           <img src={categoryImage[category]} alt={category} />
           <NavLink
             to="/countries"
           >
-            <p className="cat">
+            <button
+              className="cat"
+              onClick={() => handleSubmit(category)}
+              type="submit"
+            >
               {category}
               (
               {categoryCounts[category]}
               country
               )
-            </p>
+            </button>
           </NavLink>
-        </button>
+        </div>
       ))}
     </div>
   );

@@ -28,7 +28,6 @@ const categorySlice = createSlice({
       const filteredCountries = state.countries.filter((each) => (
         each.region === find
       ));
-      localStorage.setItem('filteredCountries', JSON.stringify(filteredCountries));
       return {
         ...state,
         filteredCountries,
@@ -53,6 +52,7 @@ const categorySlice = createSlice({
 export const { getCategoryOfCountries } = categorySlice.actions;
 
 export const allCountries = (state) => state.countries.countries;
+export const isLoading = (state) => state.countries.isLoading;
 export const filteredCountries = (state) => state.countries.filteredCountries;
 
 export default categorySlice.reducer;
