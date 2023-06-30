@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories component should render categories correctly 1`] = `
+<div>
+  <div
+    class="categories"
+  >
+    <div
+      class="category"
+      type="submit"
+    >
+      <img
+        alt="Asia"
+        src="https://i.ibb.co/zZ16v9B/Asia.png"
+      />
+      <a
+        class=""
+        href="/countries"
+      >
+        <button
+          class="cat"
+          type="submit"
+        >
+          Asia
+          (
+          1
+          country )
+        </button>
+      </a>
+    </div>
+    <div
+      class="category"
+      type="submit"
+    >
+      <img
+        alt="Europe"
+        src="https://i.ibb.co/3fLsYTF/Europe.png"
+      />
+      <a
+        class=""
+        href="/countries"
+      >
+        <button
+          class="cat"
+          type="submit"
+        >
+          Europe
+          (
+          1
+          country )
+        </button>
+      </a>
+    </div>
+    <div
+      class="category"
+      type="submit"
+    >
+      <img
+        alt="Africa"
+        src="https://i.ibb.co/9tHqvcc/Africa.png"
+      />
+      <a
+        class=""
+        href="/countries"
+      >
+        <button
+          class="cat"
+          type="submit"
+        >
+          Africa
+          (
+          1
+          country )
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+`;

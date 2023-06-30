@@ -11,6 +11,7 @@ const Categories = () => {
   const dispatch = useDispatch();
   const cat = allCategories.map((each) => (each.region));
   const categories = [...new Set(cat)];
+  console.log(categories);
 
   const handleSubmit = (id) => {
     dispatch(getCategoryOfCountries(id));
@@ -48,25 +49,28 @@ const Categories = () => {
         />
       )}
       {!loading && categories.map((category) => (
-        <button
+        <div
           type="submit"
           className="category"
           key={category}
-          onClick={() => handleSubmit(category)}
         >
           <img src={categoryImage[category]} alt={category} />
           <NavLink
             to="/countries"
           >
-            <p className="cat">
+            <button
+              className="cat"
+              onClick={() => handleSubmit(category)}
+              type="submit"
+            >
               {category}
               (
               {categoryCounts[category]}
               country
               )
-            </p>
+            </button>
           </NavLink>
-        </button>
+        </div>
       ))}
     </div>
   );
