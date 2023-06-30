@@ -53,6 +53,7 @@ const categorySlice = createSlice({
 export const { getCategoryOfCountries } = categorySlice.actions;
 
 export const allCountries = (state) => state.countries.countries;
+export const isLoading = (state) => state.countries.isLoading;
 export const filteredCountries = (state) => state.countries.filteredCountries;
 
 export default categorySlice.reducer;

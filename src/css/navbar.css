@@ -14,6 +14,40 @@ header {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
+.open {
+  height: 100vh;
+  background-color: rgb(84, 184, 167, 0.5);
+  padding: 5px 15px;
+  position: fixed;
+  z-index: 1;
+  backdrop-filter: blur(7px);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.open .left {
+  position: absolute;
+  top: 15px;
+}
+
+.open .menu-bar {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
+.open .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.open .right a {
+  width: 200px;
+}
+
 .left {
   display: flex;
   gap: 5px;

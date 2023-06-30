@@ -41,6 +41,19 @@
   font-size: 18px;
 }
 
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 800px) and (max-width: 1280px) {
   .category {
     width: 90%;

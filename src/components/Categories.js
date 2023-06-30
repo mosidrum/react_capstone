@@ -1,11 +1,13 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { allCountries, getCategoryOfCountries } from '../redux/categorySlice';
+import { allCountries, getCategoryOfCountries, isLoading } from '../redux/categorySlice';
 import '../css/categories.css';
+import loadingImage from '../assets/loading_3.gif';
 
 const Categories = () => {
   const allCategories = useSelector(allCountries);
+  const loading = useSelector(isLoading);
   const dispatch = useDispatch();
   const cat = allCategories.map((each) => (each.region));
   const categories = [...new Set(cat)];
@@ -38,7 +40,14 @@ const Categories = () => {
 
   return (
     <div className="categories">
-      {categories.map((category) => (
+      {loading && (
+        <img
+          src={loadingImage}
+          alt="loading gif"
+          className="loading"
+        />
+      )}
+      {!loading && categories.map((category) => (
         <button
           type="submit"
           className="category"
