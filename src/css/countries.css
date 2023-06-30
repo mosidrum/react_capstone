@@ -185,3 +185,47 @@
     padding: 5px;
   }
 }
+@media (max-width: 400px) {
+  .countries-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .countries {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+    width: 40%;
+    margin-right: 0px;
+  }
+
+  .country {
+    height: 80%;
+    width: 80%;
+    padding: 15px;
+  }
+
+  .country img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .country h3, .value, li {
+    font-size: 12px;
+  }
+
+  .details {
+    width: 40%;
+    padding: 10px;
+  }
+
+  .view-more .table {
+    font-size: 11px;
+  }
+
+  .view-more img {
+    width: 120px;
+    height: 70px;
+    padding: 5px;
+  }  
+}

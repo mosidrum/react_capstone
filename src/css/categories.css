@@ -73,3 +73,17 @@
     margin-bottom: 10px;
   }
 }
+
+@media (max-width: 400px) {
+  .categories {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .category {
+    width: 80%;
+  }
+
+  .category img {
+    margin-bottom: 10px;
+  }
+}

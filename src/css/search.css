@@ -103,3 +103,25 @@ input:focus {
     padding: 10px;
   }
 }
+
+@media (max-width: 400px) {
+  input {
+    width: 300px;
+  }
+
+  .result {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .result img {
+    width: 90px;
+    height: 50px;
+    object-fit: cover;
+  }
+
+  .each-result {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+}
