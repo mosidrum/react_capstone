@@ -1,0 +1,148 @@
+header {
+  display: flex;
+  height: 70px;
+  background-color: rgb(84, 184, 167, 0.5);
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  backdrop-filter: blur(7px);
+  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+}
+
+.open {
+  height: 100vh;
+  background-color: rgb(84, 184, 167, 0.5);
+  padding: 5px 15px;
+  position: fixed;
+  z-index: 1;
+  backdrop-filter: blur(7px);
+  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+}
+
+.left {
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+}
+
+.open .left {
+  position: absolute;
+  top: 15px;
+}
+
+.menu-bar {
+  display: none;
+}
+
+.open .menu-bar {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.open .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.left a {
+  color: #000;
+  text-decoration: none;
+}
+
+.right a {
+  text-decoration: none;
+}
+
+.open .right a {
+  width: 200px;
+}
+
+img {
+  height: 40px;
+  width: 40px;
+}
+
+.home,
+.search-nav,
+.back {
+  border-radius: 5px;
+  border: 1px solid rgb(94, 94, 94);
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  padding: 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px, rgba(0, 0, 0, 0.24) 0 1px 2px;
+}
+
+@media (min-width: 400px) and (max-width: 800px) {
+  header {
+    padding: 5px 15px;
+  }
+
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  .left h1 {
+    font-size: 14px;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .right {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    padding: 5px 15px;
+  }
+
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  .left h1 {
+    font-size: 14px;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .right {
+    display: none;
+  }
+}
