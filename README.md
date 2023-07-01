@@ -171,6 +171,11 @@ Example command:
 
 https://strong-clafoutis-586e91.netlify.app
 
+
+### Live presentation
+
+https://www.loom.com/share/8718608bf8b142249e364b7b6521e19a?sid=7a469b42-20a2-48d7-9974-7db3bc52d141
+
 <!--
 Example:
 
