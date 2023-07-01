@@ -28,6 +28,7 @@ const categorySlice = createSlice({
       const filteredCountries = state.countries.filter((each) => (
         each.region === find
       ));
+      localStorage.setItem('filteredCountries', JSON.stringify(filteredCountries));
       return {
         ...state,
         filteredCountries,
