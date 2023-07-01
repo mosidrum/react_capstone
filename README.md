@@ -169,7 +169,7 @@ Example command:
 
 ### Deployment
 
-https://regal-basbousa-c64ae2.netlify.app/
+https://strong-clafoutis-586e91.netlify.app
 
 <!--
 Example:
