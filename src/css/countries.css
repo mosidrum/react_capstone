@@ -79,10 +79,11 @@
   background: rgb(84, 184, 167, 0.3);
   position: sticky;
   max-height: 602px;
-  top: 90px;
+  top: 115px;
   right: 0;
   margin-bottom: 10px;
-  margin-top: 45px;
+
+  /* margin-top: 45px; */
   border-radius: 5px;
   width: 30%;
   overflow-y: auto;
@@ -159,14 +160,14 @@
   .countries {
     grid-template-columns: repeat(1, 1fr);
     gap: 0;
-    width: 40%;
+    width: 25%;
     margin-right: 0;
   }
 
   .country {
     height: 85%;
-    width: 85%;
-    padding: 15px;
+    width: 75%;
+    padding: 5px;
   }
 
   .country img {
