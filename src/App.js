@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import Search from './components/Search';
 import Countries from './components/Countries';
 import './css/App.css';
+import Details from './components/Details';
 
 function App() {
   const dispatch = useDispatch();
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/facts" element={<Facts />} />
         <Route path="/countries" element={<Countries />} />
+        <Route path="/details/:name" element={<Details />} />
         <Route path="/search" element={<Search />} />
       </Routes>
     </div>
